@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
             actionBar.setTitle(getResources().getString(R.string.app_name));
         }
         Resources resources = getResources();
-        List<TabFragment> listFragments = new ArrayList<>();
         TabsAdapter adapter = new TabsAdapter(getSupportFragmentManager());
         adapter.add(TabFragment.newInstance(1), resources.getString(R.string.frag_one));
         adapter.add(TabFragment.newInstance(2), resources.getString(R.string.frag_two));
